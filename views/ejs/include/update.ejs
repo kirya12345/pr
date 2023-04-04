@@ -1,0 +1,55 @@
+
+<%-include('include/_header') %>
+<main class="site-main">
+    <div class="container">
+    <div class="d-flex-justify-between">
+        <a href="/"><i class="fas fa-angle-double-left"></i> Все пользователи</a>
+    </div>
+    </div>
+    <div class ="form-title">
+        <h2 class="asd">Новый пользователь</h2>
+        <span class="d2 text-light">Форма обновления  пользователя</span>
+        </div>
+    
+        <form action="POST"id="update-user">
+            <div class="new_user">
+                <div class="form-group">
+                    <label for="name" class="d3 text-light">Name</label>
+                    <input tope="hidden" name="name" value="" placeholder="Jnon">
+                </div>
+            <div class="form-group">
+                <label for="Email" class=" d4 text-light">Email</label>
+                <input type="text" name="email" value=""placeholder="exzample@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="gender" class=" d5 text-light">Пол</label>
+                <div class="radio">
+                    <input type="radio" name=" gender" value="мужчина">
+                    <label for="gender" class=" d6 text-light">мужчина</label>
+                </div>
+            <div class="radio">
+                <input type="radio" name="gender" value="женщина">
+                <label for="gender" class=" d8 text-light">женщина</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="status" class=" d9 text-light">Статус</label>
+            <div class="radio">
+                <input type="radio" name="status" value="активный">
+                <label for="gender" class="text-light">активный</label>
+            </div>
+        <div class="radio">
+            <input type="radio" name="status" value="неактивный">
+            <label for="gender" class="text-light">неактивный</label>
+        </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="bth text-dark">Добавить</button>
+        </div>
+        </div>
+        </form>
+         </div>
+    </main>
+    <%- include('include/_footer') %>
+    </body>
+    </html>
